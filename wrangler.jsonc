@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "psm-observer",
+  "compatibility_date": "2026-10-01",
+  "observability": {
+    "enabled": true
+  },
+  "workers_dev": false,
+  "preview_urls": false,
+  "main": "worker.js",
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "psm.observer", "custom_domain": true },
+    { "pattern": "www.psm.observer", "custom_domain": true }
+  ]
+}

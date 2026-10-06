@@ -1,34 +1,31 @@
 # psm.observer
 
-Personal portfolio site for Parker — plain HTML/CSS/JS, no build step.
+Personal portfolio site for Parker — plain HTML/CSS/JS, no build step, deployed to Cloudflare Workers with static assets.
 
-## Files
+## Structure
 
-- `index.html` — single-page layout
-- `style.css` — dark security-researcher theme
-- `script.js` — smooth scroll + scroll reveal
-- `robots.txt`, `favicon.svg`
+- `public/` — everything served as static assets
+  - `index.html` — single-page card layout
+  - `style.css` — dark blue/purple gradient theme
+  - `script.js` — scroll reveal + footer year
+  - `resume.pdf` — downloadable resume
+  - `robots.txt`, `favicon.svg`
+- `worker.js` — redirects `www.psm.observer` → `psm.observer`, serves assets
+- `wrangler.jsonc` — Worker config, custom domains, asset serving
 
 ## Local preview
 
 ```sh
-python3 -m http.server 8000
-# open http://localhost:8000
+npx wrangler dev
+# open http://localhost:8787
 ```
 
-## Deploy to Cloudflare Pages
+## Deploy
 
-1. Push this directory to a GitHub repo.
-2. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**.
-3. Select the repo. Build settings:
-   - **Framework preset:** None
-   - **Build command:** *(leave empty)*
-   - **Build output directory:** `/` (or the repo root, e.g. `.`)
-4. Deploy. Pages will serve the static files directly.
-5. Custom domain: **Custom domains → Set up a domain** → enter `psm.observer` and follow the DNS instructions.
+Push to the GitHub repo connected to the Cloudflare Workers build (deploy command: `npx wrangler deploy`). Custom domains `psm.observer` and `www.psm.observer` are configured in `wrangler.jsonc`.
 
 ## Customize
 
-- Replace project placeholders in `index.html` (`#projects`).
-- Drop your resume PDF in the repo and update the Resume link.
-- Update the contact email in `index.html` (`#contact`).
+- Projects live in `index.html` (`#projects`).
+- Replace `public/resume.pdf` and the resume is served as-is.
+- Contact links are in `index.html` (`#contact`).
