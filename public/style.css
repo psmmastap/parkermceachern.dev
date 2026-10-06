@@ -80,23 +80,9 @@ body {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   font-weight: 700;
   color: var(--fg);
   text-decoration: none;
-}
-
-.nav-avatar {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid transparent;
-  background: var(--grad) border-box;
-  box-shadow: 0 0 6px rgba(109, 141, 255, 0.4);
-  display: block;
 }
 
 .nav-links {
