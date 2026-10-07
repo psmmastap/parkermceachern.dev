@@ -1,7 +1,7 @@
-# psm.observer
+# parkermceachern.dev
 
 Personal website of Parker McEachern — cybersecurity-focused CS student at Tennessee Tech.
-Live at **https://psm.observer**. Plain HTML/CSS/JS, no build step, hosted on Cloudflare Workers with static assets.
+Live at **https://parkermceachern.dev**. Plain HTML/CSS/JS, no build step, hosted on Cloudflare Workers with static assets.
 
 ## Pages
 
@@ -23,7 +23,7 @@ Live at **https://psm.observer**. Plain HTML/CSS/JS, no build step, hosted on Cl
   - `script.js` — typing effect (home only), footer year, scroll fade
   - `pdf-view.js` — PDF.js resume viewer (pinned CDN build, only loaded on `/resume/`)
   - `resume.pdf`, `profile.webp`, `favicon.svg`, `robots.txt`
-- `worker.js` — redirects `www.psm.observer` → `psm.observer`, otherwise serves assets
+- `worker.js` — redirects `www.parkermceachern.dev` → `parkermceachern.dev`, otherwise serves assets
 - `wrangler.jsonc` — Worker config: custom domains, `public/` assets root, 404 handling
 - `AGENTS.md` — project context and conventions for AI assistants / future contributors
 
@@ -40,7 +40,7 @@ Use `wrangler dev` rather than a static file server — it matches production be
 
 Pushing to `master` on GitHub triggers the Cloudflare Workers build (`npx wrangler deploy`); the site is live in about a minute.
 
-Custom domains `psm.observer` and `www.psm.observer` are configured in `wrangler.jsonc`; `workers.dev` and preview URLs are disabled.
+Custom domains `parkermceachern.dev` and `www.parkermceachern.dev` are configured in `wrangler.jsonc`; `workers.dev` and preview URLs are disabled.
 
 ## Customizing
 

@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "psm-observer",
+  "name": "parkermceachern.dev",
   "compatibility_date": "2026-10-01",
   "observability": {
     "enabled": true
@@ -15,7 +15,7 @@
     "not_found_handling": "404-page"
   },
   "routes": [
-    { "pattern": "psm.observer", "custom_domain": true },
-    { "pattern": "www.psm.observer", "custom_domain": true }
+    { "pattern": "parkermceachern.dev", "custom_domain": true },
+    { "pattern": "www.parkermceachern.dev", "custom_domain": true }
   ]
 }
