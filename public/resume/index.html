@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Parker McEachern's resume — view it here or download the PDF." />
+  <title>Resume | Parker McEachern</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
+  <script type="module" src="/pdf-view.js"></script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a href="/" class="logo">Parker McEachern</a>
+      <ul class="nav-links">
+        <li><a href="/experience/" aria-label="Experience"><span class="verb">cd</span> experience</a></li>
+        <li><a href="/resume/" aria-label="Resume"><span class="verb">cat</span> resume</a></li>
+        <li><a href="/blog/" aria-label="Blog"><span class="verb">ls</span> blog</a></li>
+        <li><a href="/resources/" aria-label="Resources"><span class="verb">ls</span> resources</a></li>
+        <li><a href="/contact/" aria-label="Contact"><span class="verb">ping</span> me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="resume-heading">
+      <p class="kicker"><span class="prompt-path">parker@psm.observer</span><span class="prompt-sep">:~$</span> cat /resume</p>
+      <h1 id="resume-heading">resume</h1>
+
+      <a class="cta" href="/resume.pdf" download><span class="verb">wget</span> resume.pdf</a>
+
+      <h2><span class="comment">#</span> cat resume.pdf</h2>
+      <div id="pdf-viewer" aria-label="Resume PDF viewer">
+        <p class="pdf-fallback">
+          The inline viewer needs JavaScript. You can still
+          <a href="/resume.pdf">download resume.pdf</a> directly.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Parker McEachern &middot; psm.observer</p>
+  </footer>
+</body>
+</html>

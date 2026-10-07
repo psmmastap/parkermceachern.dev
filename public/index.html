@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Parker McEachern — cybersecurity-focused computer science student. Network+ certified, red team focus, Proxmox home lab." />
   <title>Parker McEachern | psm.observer</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
 </head>
 <body>
   <div class="scanlines" aria-hidden="true"></div>
 
   <header class="site-header">
     <nav aria-label="Primary">
-      <a href="#top" class="logo">Parker McEachern</a>
+      <a href="/" class="logo">Parker McEachern</a>
       <ul class="nav-links">
-        <li><a href="#about" aria-label="About"><span class="verb">cd</span> about</a></li>
-        <li><a href="#projects" aria-label="Projects"><span class="verb">cd</span> projects</a></li>
-        <li><a href="#resume" aria-label="Resume"><span class="verb">cat</span> resume</a></li>
-        <li><a href="#contact" aria-label="Contact"><span class="verb">ping</span> me</a></li>
+        <li><a href="/experience/" aria-label="Experience"><span class="verb">cd</span> experience</a></li>
+        <li><a href="/resume/" aria-label="Resume"><span class="verb">cat</span> resume</a></li>
+        <li><a href="/blog/" aria-label="Blog"><span class="verb">ls</span> blog</a></li>
+        <li><a href="/resources/" aria-label="Resources"><span class="verb">ls</span> resources</a></li>
+        <li><a href="/contact/" aria-label="Contact"><span class="verb">ping</span> me</a></li>
       </ul>
     </nav>
   </header>
@@ -28,16 +29,15 @@
     <section class="hero" aria-labelledby="hero-heading">
       <p class="kicker"><span class="prompt-path">parker@psm.observer</span><span class="prompt-sep">:~$</span> whoami</p>
       <div class="avatar-ring">
-        <img src="profile.webp" alt="Portrait of Parker McEachern" class="hero-avatar" width="160" height="160" />
+        <img src="/profile.webp" alt="Portrait of Parker McEachern" class="hero-avatar" width="160" height="160" />
       </div>
-      <h1 id="hero-heading" class="gradient-text"><span id="typed-name"></span><span class="cursor" aria-hidden="true"></span></h1>
+      <h1 id="hero-heading"><span id="typed-name"></span><span class="cursor" aria-hidden="true"></span></h1>
       <p class="tagline">
         I am a sophomore at Tennessee Tech majoring in Computer Science with a
         concentration in Cybersecurity. I am focusing on an offensive path
         through projects and study but also reinforcing these concepts with
         defensive knowledge.
       </p>
-      <a class="cta" href="#projects"><span class="verb">./</span>view-projects</a>
     </section>
 
     <section id="about" aria-labelledby="about-heading">
@@ -96,21 +96,14 @@
       </div>
     </section>
 
-    <section id="resume" aria-labelledby="resume-heading">
-      <h2 id="resume-heading"><span class="comment">#</span> resume</h2>
-      <p>
-        Education, certifications, skills, and experience — from Network+ and
-        offensive tooling to home-lab administration and leadership roles.
-      </p>
-      <a class="cta" href="resume.pdf" download><span class="verb">curl -O</span> resume.pdf</a>
-    </section>
-
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading"><span class="comment">#</span> contact</h2>
-      <ul class="contact-links">
-        <li><span class="verb">gh:</span> <a href="https://github.com/psmmastap" rel="noopener">psmmastap</a></li>
-        <li><span class="verb">in:</span> <a href="https://linkedin.com/in/parker-mceachern-b1076734a" rel="noopener">parker-mceachern</a></li>
-        <li><span class="verb">mail:</span> <a href="mailto:parkershanemceachern@gmail.com">parkershanemceachern@gmail.com</a></li>
+    <section id="pages" aria-labelledby="pages-heading">
+      <h2 id="pages-heading"><span class="comment">#</span> pages</h2>
+      <ul class="page-list">
+        <li><a href="/experience/"><span class="verb">cd</span> /experience</a></li>
+        <li><a href="/resume/"><span class="verb">cat</span> /resume</a></li>
+        <li><a href="/blog/"><span class="verb">ls</span> /blog</a></li>
+        <li><a href="/resources/"><span class="verb">ls</span> /resources</a></li>
+        <li><a href="/contact/"><span class="verb">ping</span> /contact</a></li>
       </ul>
     </section>
   </main>
