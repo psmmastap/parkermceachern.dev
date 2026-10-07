@@ -27,16 +27,70 @@
 
   <main>
     <section aria-labelledby="resources-heading">
-      <p class="kicker"><span class="prompt-path">parker@psm.observer</span><span class="prompt-sep">:~$</span> cat resources.txt</p>
+      <p class="kicker"><span class="prompt-path">parker@psm.observer</span><span class="prompt-sep">:~$</span> ls -la /resources</p>
       <h1 id="resources-heading">resources</h1>
 
-      <p class="muted">Tools and platforms I use for training and study.</p>
+      <div class="ls-list" aria-label="Table of contents">
+        <a class="ls-row" href="#offensive">
+          <span class="ls-perms">drwxr-xr-x</span>
+          <span class="ls-size">-</span>
+          <span class="ls-user">omarchypsm</span>
+          <span class="ls-date">21 Sep 19:35</span>
+          <span class="ls-name">Offensive</span>
+        </a>
+        <a class="ls-row" href="#defensive">
+          <span class="ls-perms">drwxrwxrwx</span>
+          <span class="ls-size">-</span>
+          <span class="ls-user">omarchypsm</span>
+          <span class="ls-date">6 Feb 18:05</span>
+          <span class="ls-name">Defensive</span>
+        </a>
+        <a class="ls-row" href="#omarchy">
+          <span class="ls-perms">drwxr-xr-x</span>
+          <span class="ls-size">-</span>
+          <span class="ls-user">omarchypsm</span>
+          <span class="ls-date">5 Oct 13:09</span>
+          <span class="ls-name">omarchy</span>
+        </a>
+        <a class="ls-row" href="#online-resources">
+          <span class="ls-perms">drwxr-xr-x</span>
+          <span class="ls-size">-</span>
+          <span class="ls-user">omarchypsm</span>
+          <span class="ls-date">1 Oct 15:12</span>
+          <span class="ls-name">Online_Resources</span>
+        </a>
+      </div>
+
+      <h2 id="offensive"><span class="comment">#</span> Offensive/</h2>
+      <p class="muted">Hands-on practice platforms for offensive security.</p>
       <ul class="resource-list">
-        <li><span class="entry-name">hackthebox</span> — <a href="https://www.hackthebox.com" rel="noopener">hackthebox.com</a> · red team training path</li>
-        <li><span class="entry-name">overthewire</span> — <a href="https://overthewire.org" rel="noopener">overthewire.org</a> · wargames for linux/command-line skills</li>
-        <li><span class="entry-name">tryhackme</span> — <a href="https://tryhackme.com" rel="noopener">tryhackme.com</a> · guided offensive security rooms</li>
+        <li><span class="entry-name">overthewire</span> — <a href="https://overthewire.org" rel="noopener">overthewire.org</a> · wargames (Bandit, Natas) for linux and web fundamentals</li>
+        <li><span class="entry-name">portswigger-academy</span> — <a href="https://portswigger.net/web-security" rel="noopener">portswigger.net/web-security</a> · free web exploitation labs (XSS, SQLi, SSRF)</li>
+        <li><span class="entry-name">picoctf</span> — <a href="https://picoctf.org" rel="noopener">picoctf.org</a> · beginner-friendly CTF challenges</li>
+      </ul>
+
+      <h2 id="defensive"><span class="comment">#</span> Defensive/</h2>
+      <p class="muted">Blue team and detection practice.</p>
+      <ul class="resource-list">
+        <li><span class="entry-name">letsdefend</span> — <a href="https://letsdefend.io" rel="noopener">letsdefend.io</a> · SOC analyst simulations and alert triage</li>
+        <li><span class="entry-name">cyberdefenders</span> — <a href="https://cyberdefenders.org" rel="noopener">cyberdefenders.org</a> · blue team labs and dfir challenges</li>
+        <li><span class="entry-name">btlo</span> — <a href="https://blueteamlabs.online" rel="noopener">blueteamlabs.online</a> · defensive security investigation scenarios</li>
+      </ul>
+
+      <h2 id="omarchy"><span class="comment">#</span> omarchy/</h2>
+      <p class="muted">My daily driver is Omarchy (Arch-based) on Hyprland.</p>
+      <ul class="resource-list">
+        <li><span class="entry-name">omarchy</span> — <a href="https://omarchy.org" rel="noopener">omarchy.org</a> · the Arch + Hyprland setup I run</li>
+        <li><span class="entry-name">arch-wiki</span> — <a href="https://wiki.archlinux.org" rel="noopener">wiki.archlinux.org</a> · the reference for everything Arch</li>
+        <li><span class="entry-name">hyprland-wiki</span> — <a href="https://wiki.hyprland.org" rel="noopener">wiki.hyprland.org</a> · window manager config and tweaks</li>
+      </ul>
+
+      <h2 id="online-resources"><span class="comment">#</span> Online_Resources/</h2>
+      <p class="muted">Platforms and references I use regularly.</p>
+      <ul class="resource-list">
+        <li><span class="entry-name">hackthebox</span> — <a href="https://www.hackthebox.com" rel="noopener">hackthebox.com</a> · red team training path and boxes</li>
+        <li><span class="entry-name">tryhackme</span> — <a href="https://tryhackme.com" rel="noopener">tryhackme.com</a> · guided offensive and defensive rooms</li>
         <li><span class="entry-name">proxmox-docs</span> — <a href="https://pve.proxmox.com/wiki/Main_Page" rel="noopener">pve.proxmox.com</a> · VE administration reference for the home lab</li>
-        <li><span class="entry-name">arch-wiki</span> — <a href="https://wiki.archlinux.org" rel="noopener">wiki.archlinux.org</a> · daily driver (Omarchy) reference</li>
       </ul>
     </section>
   </main>

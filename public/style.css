@@ -119,6 +119,7 @@ main {
 section {
   padding: 4.5rem 0;
   border-bottom: 1px solid var(--border);
+  scroll-margin-top: 4.5rem;
 }
 
 section:last-of-type {
@@ -141,6 +142,7 @@ h2 {
   font-size: 1.2rem;
   font-weight: 700;
   margin: 2.5rem 0 1.25rem;
+  scroll-margin-top: 4.5rem;
 }
 
 section h2:first-of-type {
@@ -263,6 +265,59 @@ a:focus-visible {
 
 .page-list,
 .contact-links,
+.ls-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  overflow-x: auto;
+}
+
+.ls-row {
+  display: grid;
+  grid-template-columns: 7.5rem 1.5rem 6.5rem 8.5rem 1fr;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+  font-size: 0.9rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ls-perms,
+.ls-size,
+.ls-user,
+.ls-date {
+  color: var(--fg-dim);
+}
+
+.ls-name {
+  color: var(--accent);
+}
+
+.ls-row:hover .ls-name,
+.ls-row:focus-visible .ls-name {
+  text-decoration: underline;
+}
+
+.ls-row:hover {
+  background: rgba(109, 141, 255, 0.06);
+}
+
+@media (max-width: 640px) {
+  .ls-row {
+    grid-template-columns: 1fr auto;
+  }
+
+  .ls-perms,
+  .ls-size,
+  .ls-user,
+  .ls-date {
+    display: none;
+  }
+}
+
 .resource-list {
   list-style: none;
   display: flex;
