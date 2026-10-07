@@ -10,7 +10,7 @@ if (container) {
   const dpr = window.devicePixelRatio || 1;
 
   try {
-    const pdf = await pdfjsLib.getDocument("/resume.pdf").promise;
+    const pdf = await pdfjsLib.getDocument("../resume.pdf").promise;
     container.replaceChildren();
 
     for (let i = 1; i <= pdf.numPages; i++) {
@@ -37,7 +37,7 @@ if (container) {
     if (!container.querySelector(".pdf-fallback")) {
       const p = document.createElement("p");
       p.className = "pdf-fallback";
-      p.innerHTML = 'Something went wrong rendering the PDF. <a href="/resume.pdf">Download resume.pdf</a> instead.';
+      p.innerHTML = 'Something went wrong rendering the PDF. <a href="../resume.pdf">Download resume.pdf</a> instead.';
       container.appendChild(p);
     }
     console.error("PDF viewer failed:", err);
