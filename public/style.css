@@ -367,6 +367,23 @@ a:focus-visible {
   max-width: 640px;
 }
 
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.activity h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.activity p {
+  color: var(--fg-dim);
+  font-size: 0.92rem;
+  max-width: 640px;
+}
+
 .contact-links .verb {
   opacity: 0.6;
 }
